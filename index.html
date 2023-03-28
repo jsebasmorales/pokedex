@@ -9,24 +9,21 @@
         <title>Pokedex</title>
     </head>
     <body>
-        <section class="header">
+        <header class="header">
             <img src="./assets/pokedex.gif" class="header_img" alt="" />
-            <h1>Pokemones</h1>
-            <input type="search" class="header-input" id="inputPokemon" placeholder="¿Qué pokemón buscas?" />
-        </section>
-        <section id="pokemones">
-            <div id="pokemones_card">
-                <div id="pokemones_card--img"></div>
-                <h2 id="pokemones_card--name"></h2>
-                <div id="pokemones_card--type">
-                <div id="pokemones_card--type1">
-                    </div>
-                    <div id="pokemones_card--type2">
-                    </div>
-                </div>
-                <button id="pokemones_card--button"><img src="./assets/plus_red.png" class="pokemones_card--button-plus" alt=""></button>
+            <div class="header_search">
+                <h1>Búsca tu Pokemón</h1>
+                <input type="search" class="header-input" id="inputPokemon" placeholder="¿Qué pokemón buscas?" />
             </div>
-        </section>
-        <script src="./index.js"></script>
+        </header>
+        <main id="pokemon">
+            <div id="pokeModal" class="modal">
+                <div id="modalInfo" class="modal-content">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+        <script src="./index.js" async></script>
     </body>
 </html>
