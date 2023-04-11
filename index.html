@@ -11,16 +11,31 @@
     <body>
         <header class="header">
             <img src="./assets/pokedex.gif" class="header_img" alt="" />
-            <div class="header_search">
-                <h1>Búsca tu Pokemón</h1>
-                <input type="search" class="header-input" id="inputPokemon" placeholder="¿Qué pokemón buscas?" />
-            </div>
         </header>
-        <main id="pokemon">
-            <div id="pokeModal" class="modal">
-                <div id="modalInfo" class="modal-content">
-                    <span class="close">&times;</span>
+        <main class="pokemonFlex">
+            <div id="pokemonDetail">
+                <input type="search" class="pokemonDetail-search input-search .box" id="pokemonDetail-search" placeholder="¿Qué pokemón quieres buscar?" />
+                <span id="pokemonDetail-error"></span>
+                <div id="pokemonDetail-card">
+                    <h2 id="pokemonDetail-card--name" class="text-flicker-in-glow "></h2>
+                    <div id="pokemonDetail-card--img">
+                    </div>
+                    <div class="pokemonDetail-card--data">
+                        
+                        <p id="pokemonDetail-card--id"></p>
+                        <p id="pokemonDetail-card--height"></p>
+                        <p id="pokemonDetail-card--weight"></p>
+                        <h3>Habilidades</h3>
+                        <div id="pokemonDetail-card--abilities">
+                        </div>
+                    </div>
+                    
                 </div>
+            </div>
+            <div id="pokemonsCard">
+                <input type="search" class="pokemonsCard-search input-search" id="pokemonNumb" placeholder="¿Cuántos Pokemons quieres ver?" />
+                <span id="errorPokemon"></span>
+                <div id="pokemon"></div>
             </div>
         </main>
         <footer class="footer"></footer>
